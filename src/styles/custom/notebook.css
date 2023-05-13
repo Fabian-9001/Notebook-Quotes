@@ -1,12 +1,12 @@
 .notebook__container {
   width: 80%;
+  max-width: 550px;
   height: 100vw;
   min-height: 400px;
-  max-width: 550px;
   max-height: 700px;
   background-color: #ffd890;
   border-radius: 10px;
-  box-shadow: 10px 10px #fff, 20px 20px #ffd890, 20px 20px 10px 1px #535353;
+  box-shadow: 10px 10px #fff, 20px 20px #ffd890, 20px 20px 10px 1px #222222;
   display: flex;
 }
 
@@ -66,17 +66,42 @@
   right: 0;
   transition: 2s;
   border-radius: 10px 0 0 0;
-  background: linear-gradient(
-    -45deg,
-    rgb(255, 255, 255) 45%,
-    rgb(143, 143, 143) 48%,
-    rgb(172, 172, 172) 50%,
-    rgb(184, 184, 184) 55%
-  );
+  background: linear-gradient(-45deg,
+      rgb(255, 255, 255) 45%,
+      rgb(143, 143, 143) 48%,
+      rgb(172, 172, 172) 50%,
+      rgb(184, 184, 184) 55%);
 }
 
-.notebook__container:hover .notebook__page {
+.notebook__btn {
+  width: 40px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  transition: 0.5s;
+}
+
+.notebook__btn:hover {
+  scale: 1.05;
+}
+
+.notebook__quote {
+  position: absolute;
+  font-size: max(2vw,16px);
+  margin: 20px;
+  line-height: 28px
+}
+
+.notebook__container .notebook__page {
   clip-path: inset(0 0 0 0);
+  transform: translateX(1px);
 }
 
 .notebook__container:hover .notebook__corner {

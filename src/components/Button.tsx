@@ -1,11 +1,12 @@
 export interface IButton extends React.ComponentPropsWithoutRef<'button'> {
-  ramdomData: () => void
+  children?: React.ReactNode
+  clasName?: string
 }
 
-const Button: React.FC<IButton> = ({ ramdomData, ...btnProps }) => {
+const Button: React.FC<IButton> = ({ children, className, ...btnProps }) => {
   return (
-    <button {...btnProps} onClick={ramdomData}>
-      Button
+    <button className={`notebook__btn ${className}`} {...btnProps}>
+      {children}
     </button>
   )
 }

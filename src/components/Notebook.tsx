@@ -17,10 +17,15 @@ const Notebook: React.FC<INotebook> = ({ ramdomData, quote, color }) => {
         </div>
       </div>
       <div className='notebook__page'>
-        <p style={{ color: color?.color }}>{quote?.quote}</p>
+        <p className='notebook__quote' style={{ color: color.color }}>
+          {quote.quote}
+        </p>
         <div className='notebook__line'></div>
-        <div className='notebook__corner'></div>
-        <Button ramdomData={ramdomData} />
+        <div className='notebook__corner'>
+          <Button style={{ backgroundColor: color.color }} onClick={ramdomData}>
+            &#62;
+          </Button>
+        </div>
       </div>
     </div>
   )
