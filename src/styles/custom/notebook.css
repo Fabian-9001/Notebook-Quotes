@@ -99,7 +99,7 @@
   line-height: 28px
 }
 
-.notebook__container .notebook__page {
+.notebook__container:hover .notebook__page {
   clip-path: inset(0 0 0 0);
   transform: translateX(1px);
 }
