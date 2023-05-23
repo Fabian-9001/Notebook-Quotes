@@ -24,7 +24,8 @@
 .notebook__gap {
   width: 20px;
   height: 20px;
-  background-color: #000000;
+  background-color: #cecece;
+  color: #cecece;
   border-radius: 50%;
   box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px,
     0 240px, 0 280px, 0 320px, 0 360px, 0 400px, 0 440px, 0 480px, 0 520px, 0 560px, 0 600px, 0 640px;
@@ -33,7 +34,8 @@
 .notebook__spring {
   width: 35px;
   height: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #222222;
+  color: #222222;
   border-radius: 10px;
   box-shadow: 0 40px, 0 80px, 0 120px, 0 160px, 0 200px,
     0 240px, 0 280px, 0 320px, 0 360px, 0 400px, 0 440px, 0 480px, 0 520px, 0 560px, 0 600px, 0 640px;
@@ -94,6 +96,7 @@
   top: 11.5%;
   left: 10%;
   width: 80%;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .notebook__quote {
@@ -101,6 +104,7 @@
   line-height: clamp(30px, 7vw, 2.5rem);
   background-color: white;
   margin-bottom: 30px;
+  display: block;
 }
 
 .notebook__quote__author {

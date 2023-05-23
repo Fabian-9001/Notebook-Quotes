@@ -3,32 +3,35 @@ import Button from './Button'
 
 const Notebook: React.FC<INotebook> = ({ changeStyles, quote, color }) => {
   return (
-    <div className='notebook__container'>
-      <div className='notebook__loin'>
-        <div className='notebook__gap'>
-          <div className='notebook__spring'></div>
-        </div>
-      </div>
+    <article className='notebook__container'>
+      <figure className='notebook__loin'>
+        <figure className='notebook__gap'>
+          <figure className='notebook__spring'></figure>
+        </figure>
+      </figure>
       <div className='notebook__page'>
-        <div className='notebook__content'>
-          <p className='notebook__quote' style={{ color: color.color }}>
+        <h1 className='notebook__content'>
+          <span className='notebook__quote' style={{ color: color.color }}>
             “{quote.quote}”
-          </p>
-          <p className='notebook__quote__author' style={{ color: color.color }}>
+          </span>
+          <span
+            className='notebook__quote__author'
+            style={{ color: color.color }}
+          >
             {quote.author}
-          </p>
-        </div>
-        <div className='notebook__line'></div>
-        <div className='notebook__corner'>
+          </span>
+        </h1>
+        <figure className='notebook__line'></figure>
+        <figure className='notebook__corner'>
           <Button
             style={{ backgroundColor: color.color }}
             onClick={changeStyles}
           >
             &#62;
           </Button>
-        </div>
+        </figure>
       </div>
-    </div>
+    </article>
   )
 }
 
