@@ -10,9 +10,14 @@ const Notebook: React.FC<INotebook> = ({ changeStyles, quote, color }) => {
         </div>
       </div>
       <div className='notebook__page'>
-        <p className='notebook__quote' style={{ color: color.color }}>
-          {quote.quote}
-        </p>
+        <div className='notebook__content'>
+          <p className='notebook__quote' style={{ color: color.color }}>
+            “{quote.quote}”
+          </p>
+          <p className='notebook__quote__author' style={{ color: color.color }}>
+            {quote.author}
+          </p>
+        </div>
         <div className='notebook__line'></div>
         <div className='notebook__corner'>
           <Button
