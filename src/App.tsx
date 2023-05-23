@@ -1,9 +1,9 @@
-import '../styles/App.css'
-import Notebook from '../components/Notebook'
-import quotes from '../lib/data/quotes.json'
-import colors from '../lib/data/colors.json'
+import './styles/App.css'
+import Notebook from './components/Notebook'
+import quotes from './lib/data/quotes.json'
+import colors from './lib/data/colors.json'
 import { useState } from 'react'
-import { IColor, IQuote } from '../lib/interfaces/notebook'
+import { IColor, IQuote } from './lib/interfaces/notebook'
 
 function App() {
   const [quote, setQuote] = useState<IQuote>(quotes[ramdomIndex(quotes)])
